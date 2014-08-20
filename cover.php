@@ -44,7 +44,7 @@
 				position: absolute;
 				left: 50%;
 				top: 50%;
-				-webkit-transform: translate(-50%, -70%);
+				-webkit-transform: translate(-50%, -65%);
 				font-family: "Alegreya Sans", sans-serif;
 				font-weight: 100;
 				text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
@@ -66,10 +66,7 @@
 
 	<body>
 
-		<div id="time">
-			7:09
-		</div>
-
+		<div id="time"></div>
 		<div class="canvas"></div>
 
 		<script type="text/javascript">
@@ -95,23 +92,23 @@
 				document.querySelector(".canvas").style.backgroundImage = "url('" + bgImages[Math.floor(bgImages.length * Math.random())] + "')";
 				document.querySelector(".canvas").style.backgroundSize = "cover";
 
-				//
+				setInterval(function() {
 
-				var d = new Date();
+					var d = new Date();
 
-				if(d.getMinutes() < 10) {
-					var dMins = "0" + d.getMinutes();
-				} else {
-					dMins = d.getMinutes();
-				}
+					if(d.getMinutes() < 10) {
+						var dMins = "0" + d.getMinutes();
+					} else {
+						dMins = d.getMinutes();
+					}
 
-				if(d.getHours() < 10) {
-					var dHrs = "0" + d.getHours();
-				} else {
-					dHrs = d.getHours();
-				}
-
-				document.querySelector("#time").innerHTML = dHrs + ":" + dMins;
+					if(d.getHours() < 10) {
+						var dHrs = "0" + d.getHours();
+					} else {
+						dHrs = d.getHours();
+					}
+					document.querySelector("#time").innerHTML = dHrs + ":" + dMins;
+				}, 1000);
 
 			}
 
