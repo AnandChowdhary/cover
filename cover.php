@@ -108,6 +108,7 @@
 						dHrs = d.getHours();
 					}
 					document.querySelector("#time").innerHTML = dHrs + ":" + dMins;
+					
 				}, 1000);
 
 			}
