@@ -3,8 +3,8 @@ Cover
 
 Time displayed on a beautiful background image from [Unsplash](http://unsplash.com). A perfect screensaver.
 
-* [Demo - Time](http://classrebels.com/anand/cover.php)
-* [Demo - IP Address](http://classrebels.com/anand/ip.php)
+* [Demo - Time](http://classrebels.co/anand/cover.php)
+* [Demo - IP Address](http://classrebels.co/anand/ip.php)
 
 Working
 =======
